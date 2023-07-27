@@ -1,0 +1,47 @@
+body{
+    .description {
+        position: absolute;
+        height: 60%;
+        background: transparent;
+        z-index: 9999;
+        width: 100%;
+        top: 0;
+      }
+      
+      .hover-team>.wpb_wrapper {
+        width: 50%;
+        height: 100%;
+        opacity: 0;
+        padding: 10%;
+        transition: all 400ms ease-in-out;
+      }
+      
+      .description:hover>.wpb_wrapper {
+        display: block !important;
+        transform: inherit;
+        top: 0;
+        position: absolute;
+        z-index: 99999;
+        width: 50%;
+        height: 100%;
+        background: #E9E9E5;
+        padding: 10%;
+        opacity: 1;
+      }
+      
+      .left:hover>.wpb_wrapper {
+          transform: translateX(-73.5%);
+      }
+      .right:hover>.wpb_wrapper {
+          transform: translateX(53.5%);
+      }
+      
+      .row {
+        width: 100%;
+        display: inline-flex;
+      }
+      
+      .vc_col-sm-6 {
+        width: 50%;
+      }
+}
